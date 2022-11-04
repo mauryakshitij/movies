@@ -14,8 +14,8 @@ movieGrid.innerHTML = " ";
 function FetchMovies(url) {
     fetch(url)
         .then((response) => {
-            // console.log(response.json());
             return response.json()
+            // console.log(response.json());
         })
         .then((data) => {
             console.log(data);
